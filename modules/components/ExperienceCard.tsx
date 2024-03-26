@@ -35,7 +35,7 @@ const ExperienceCard = ({ experience }: Props) => {
             {experience?.jobTitle.toUpperCase()}
           </h4>
           
-          <div className="flex space-x-1 my-1">
+          <div className="flex space-x-1 my-1 overflow-x-scroll snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thumb-emerald-500 scrollbar-thin">
             {experience?.technologies.map((technology) => (
               <img
                 key={technology._id}
